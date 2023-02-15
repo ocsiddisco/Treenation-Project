@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# <img src="src/Images/favicon.ico"> Project Treenation <img src="src/Images/favicon.ico">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+With this project, my goals were to get more experience using React and Redux. It has also been an apportunity to discover new tools as React Router, Redux Toolkit, Rechart, Styled Components, and use Local Storage.
 
-## Available Scripts
+Assignment:
+-> Get information from the API treenation about tree species, sites, projects. A first page will show basic information, while the 2nd will display more detailed information.
 
-In the project directory, you can run:
+-> A page can be reached from the list view of directly via url (url should contains a unique identifier).
 
-### `npm start`
+-> When data is being fetched, display a loading state.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-> Use redux to trigger API calls and store data.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-> In a store save a request counter to control how many requests to the API are left, and prepare some user friendly information for user when limit will be reached.
 
-### `npm test`
+-> Handle errors
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-> Use data visualization
 
-### `npm run build`
+## Screenshots
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img src="src/Images/n01.png">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img src="src/Images/n02.png">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img src="src/Images/n03.png">
 
-### `npm run eject`
+<img src="src/Images/n04.png">
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## How I approched the project
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. I started small by creating the first components with React (V18) and fetching data from the API.
+   (Treenation: https://documenter.getpostman.com/view/6643991/S17m1X5P#46b02bb7-a0f8-4fd8-9014-e3df21df19fc)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Then, I searched how to use React Router by reading the documentation and tutorials.
+   I used the last version of React Router, 'CreateBrowserRouter', and 'Link' components.
+   At this stage, I added the loading spinner and error page.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Implemented Redux toolkit, using RTK Query. I needed to use 'Params hook' to catch the ID of project/tree in the URL and pass it as parameter to fetch data.
+   I used Redux as well to keep count of the potentiel numbers of calls left to the API. (this last part does need to be improved to implement the count on the API calls, it is currently dependent on the interactions with buttons.)
 
-## Learn More
+4. Added some Data visualisation using Rechart + the option to hide/show the graph
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. Finally, started styling. I heard about Styled Components several times already and was curious to test it out.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Place for Improvements
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-> Move the count of API calls on the API calls instead of depnding of the interactions with buttons
+-> Add a graph using data from two different calls to the API
+-> Add dropdown menu on 1st page to select projects per country
+-> Organize the cards by alphabetical order
+-> Remove useNavigate from the code to keep only Link and prevent an incorrect "go back to previous page"
+-> Make a better use of Styled Components by searching for good practices
+-> Improve the design for mobile
+-> Add the name of the project on the project page
+-> Add definition of "life time CO2" on hover
