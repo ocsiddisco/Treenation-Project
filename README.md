@@ -45,12 +45,12 @@ Assignment:
 
 ## Place for Improvements
 
--> Move the count of API calls on the API calls instead of depnding of the interactions with buttons
--> Add a graph using data from two different calls to the API
--> Add dropdown menu on 1st page to select projects per country
--> Organize the cards by alphabetical order
--> Remove useNavigate from the code to keep only Link and prevent an incorrect "go back to previous page"
--> Make a better use of Styled Components by searching for good practices
--> Improve the design for mobile
--> Add the name of the project on the project page
--> Add definition of "life time CO2" on hover
+- Move the count of API calls on the API calls instead of depnding of the interactions with buttons
+- Add a graph using data from two different calls to the API
+- Add dropdown menu on 1st page to select projects per country
+- Organize the cards by alphabetical order
+- Remove useNavigate from the code to keep only Link and prevent an incorrect "go back to previous page"
+- Make a better use of Styled Components by searching for good practices
+- Improve the design for mobile
+- Add the name of the project on the project page
+- Add definition of "life time CO2" on hover
