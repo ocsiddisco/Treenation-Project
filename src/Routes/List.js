@@ -14,28 +14,34 @@ export default function List() {
 
   return (
     <div>
-      <Title>Projects currently available for funding</Title>
+      <Title>
+        Projects currently available
+        <br />
+        for funding
+      </Title>
       {isLoading ? (
         <LoadingSpinner />
       ) : (
         <CardsWrapper>
-          {data.map((project) => {
-            return (
-              <StyledCard
-                key={project.id}
-                onClick={() => dispatch(decrement())}
-              >
-                <Link
-                  to={`/project/${project.id}`}
-                  style={{ textDecoration: "none" }}
+          {[...data]
+            .sort((a, b) => (b.name < a.name ? 1 : -1))
+            .map((project) => {
+              return (
+                <StyledCard
+                  key={project.id}
+                  onClick={() => dispatch(decrement())}
                 >
-                  <h1>{project.name}</h1>
-                  <h4>Country: {project.location}</h4>
-                  <h4>{project.description}</h4>
-                </Link>
-              </StyledCard>
-            );
-          })}
+                  <Link
+                    to={`/project/${project.id}`}
+                    style={{ textDecoration: "none" }}
+                  >
+                    <h1>{project.name}</h1>
+                    <h4>Country: {project.location}</h4>
+                    <h4>{project.description}</h4>
+                  </Link>
+                </StyledCard>
+              );
+            })}
         </CardsWrapper>
       )}
     </div>

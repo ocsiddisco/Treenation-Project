@@ -1,31 +1,38 @@
-# <img src="src/Images/favicon.ico"> Project Treenation <img src="src/Images/favicon.ico">
+  <h1 align="center">
+  <img src="src/Images/favicon.ico"> Project Treenation <img src="src/Images/favicon.ico">
+  </h1>
 
-With this project, my goals were to get more experience using React and Redux. It has also been an apportunity to discover new tools as React Router, Redux Toolkit, Rechart, Styled Components, and use Local Storage.
+With this project, my goals were to get more experience using React and Redux. It has also been an apportunity to discover new tools as React Router, Redux Toolkit, Recharts, Styled Components, and use Local Storage.
 
-Assignment:
--> Get information from the API treenation about tree species, sites, projects. A first page will show basic information, while the 2nd will display more detailed information.
+## Assignment
 
--> A page can be reached from the list view of directly via url (url should contains a unique identifier).
+- Get information from the API treenation about tree species, sites, projects. A first page will show basic information, while the 2nd will display more detailed information.
 
--> When data is being fetched, display a loading state.
+- A page can be reached from the list view of directly via url (url should contains a unique identifier).
 
--> Use redux to trigger API calls and store data.
+- When data is being fetched, display a loading state.
 
--> In a store save a request counter to control how many requests to the API are left, and prepare some user friendly information for user when limit will be reached.
+- Use redux to trigger API calls and store data.
 
--> Handle errors
+- In a store save a request counter to control how many requests to the API are left, and prepare some user friendly information for user when limit will be reached.
 
--> Use data visualization
+- Handle errors
+
+- Use data visualization
 
 ## Screenshots
 
-<img src="src/Images/n01.png">
+<p align='center'>
 
-<img src="src/Images/n02.png">
+   <img src="src/Images/n01.png">
 
-<img src="src/Images/n03.png">
+   <img src="src/Images/n02.png">
 
-<img src="src/Images/n04.png">
+   <img src="src/Images/n03.png">
+
+   <img src="src/Images/n04.png">
+
+</p>
 
 ## How I approched the project
 

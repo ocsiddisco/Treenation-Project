@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
 
-  background-color: rgb(138, 89, 26);
+  background-color: rgb(224 171 102);
   margin: 20px;
   padding: 20px;
   border-radius: 15px 50px;
@@ -17,7 +17,6 @@ export const RequestButton = styled.button`
   color: green;
   cursor: pointer;
   display: inline-block;
-  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
   padding: 7px 20px;
   text-align: center;
   transition: all 250ms;

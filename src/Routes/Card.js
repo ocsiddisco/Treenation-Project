@@ -36,7 +36,11 @@ export default function Card() {
         Go back to the projects page
       </BackButton>
       <ComponentCenter>
-        <Title>List of trees planted in this project</Title>
+        <Title>
+          List of trees planted
+          <br />
+          in this project
+        </Title>
       </ComponentCenter>
       {isLoading ? (
         <ComponentCenter>
@@ -55,20 +59,25 @@ export default function Card() {
           </ComponentCenterColumn>
 
           <CardsWrapper>
-            {data.map((tree) => {
-              return (
-                <StyledCard key={tree.id} onClick={() => dispatch(decrement())}>
-                  <Link
-                    to={`/tree/${tree.id}`}
-                    style={{ textDecoration: "none" }}
+            {[...data]
+              .sort((a, b) => (b.name < a.name ? 1 : -1))
+              .map((tree) => {
+                return (
+                  <StyledCard
+                    key={tree.id}
+                    onClick={() => dispatch(decrement())}
                   >
-                    <h1>{tree.name}</h1>
-                    <h4>Life Time CO2: {tree.life_time_CO2} Kg</h4>
-                    <h4>Price per tree: {tree.price} euros</h4>
-                  </Link>
-                </StyledCard>
-              );
-            })}
+                    <Link
+                      to={`/tree/${tree.id}`}
+                      style={{ textDecoration: "none" }}
+                    >
+                      <h1>{tree.name}</h1>
+                      <h4>Life Time CO2: {tree.life_time_CO2} Kg</h4>
+                      <h4>Price per tree: {tree.price} euros</h4>
+                    </Link>
+                  </StyledCard>
+                );
+              })}
           </CardsWrapper>
 
           <BackButton onClick={handleClick}>
