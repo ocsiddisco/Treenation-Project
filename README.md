@@ -55,7 +55,7 @@ With this project, my goals were to get more experience using React and Redux. I
 - Move the count of API calls on the API calls instead of depnding of the interactions with buttons
 - Add a graph using data from two different calls to the API
 - Add dropdown menu on 1st page to select projects per country
-- Organize the cards by alphabetical order
+- ~~Organize the cards by alphabetical order~~
 - Remove useNavigate from the code to keep only Link and prevent an incorrect "go back to previous page"
 - Make a better use of Styled Components by searching for good practices
 - Improve the design for mobile
