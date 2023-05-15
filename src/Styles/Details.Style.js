@@ -21,6 +21,7 @@ export const DetailsStyle = styled.div`
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  font-weight: 100;
 
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
@@ -40,8 +41,13 @@ export const DetailsStyle = styled.div`
 
   & h4 {
     font-family: "OpenSans-Regular", sans-serif;
-    margin-top: 5px;
+    font-weight: 200;
+
+    margin-top: 3px;
     line-height: 1.3em;
     text-align: justify;
+    @media (max-width: 640px) {
+      text-align: center;
+    }
   }
 `;

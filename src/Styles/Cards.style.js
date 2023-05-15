@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const StyledCard = styled.div`
   @import url("./Font/OpenSans/OpenSans-Light.ttf");
   @import url("./Font/OpenSans/OpenSans-Regular.ttf");
-
-  width: 25em;
+  box-sizing: border-box;
+  width: 22em;
   margin: 10px 10px 10px 10px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
@@ -21,9 +21,15 @@ export const StyledCard = styled.div`
   & h1 {
     display: flex;
     font-family: "OpenSans-Light", sans-serif;
-    font-weight: 300;
     line-height: 1.2em;
     color: #645f11;
+    font-weight: 200;
+    margin-top: 0;
+    margin-bottom: 10px;
+    @media (max-width: 640px) {
+      font-size: 18px;
+      font-weight: bold;
+    }
   }
 
   & h4 {
@@ -31,6 +37,8 @@ export const StyledCard = styled.div`
     color: #645f11;
     line-height: 1.3em;
     text-align: justify;
+    font-weight: 200;
+    margin: 5px 0 5px 0;
   }
 
   &:hover {

@@ -37,7 +37,7 @@ export default function Card() {
       </BackButton>
       <ComponentCenter>
         <Title>
-          List of trees planted
+          Get to know the trees planted
           <br />
           in this project
         </Title>
@@ -72,8 +72,13 @@ export default function Card() {
                       style={{ textDecoration: "none" }}
                     >
                       <h1>{tree.name}</h1>
-                      <h4>Life Time CO2: {tree.life_time_CO2} Kg</h4>
-                      <h4>Price per tree: {tree.price} euros</h4>
+                      <h4>
+                        <strong>Life Time CO2: </strong>
+                        {tree.life_time_CO2} Kg
+                      </h4>
+                      <h4>
+                        <strong>Price per tree:</strong> {tree.price} euros
+                      </h4>
                     </Link>
                   </StyledCard>
                 );

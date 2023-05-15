@@ -7,6 +7,7 @@ import { useDispatch } from "react-redux";
 import { Title } from "../Styles/Title.style";
 import { StyledCard } from "../Styles/Cards.style.js";
 import { CardsWrapper } from "../Styles/CardsWrapper.style.js";
+import { ComponentCenter } from "../Styles/Div.Style.js";
 
 export default function List() {
   const { data, isLoading } = useGetProjectsQuery();
@@ -15,12 +16,14 @@ export default function List() {
   return (
     <div>
       <Title>
-        Projects currently available
+        Discover the Treenation projects
         <br />
-        for funding
+        currently available for funding
       </Title>
       {isLoading ? (
-        <LoadingSpinner />
+        <ComponentCenter>
+          <LoadingSpinner />
+        </ComponentCenter>
       ) : (
         <CardsWrapper>
           {[...data]
@@ -36,7 +39,9 @@ export default function List() {
                     style={{ textDecoration: "none" }}
                   >
                     <h1>{project.name}</h1>
-                    <h4>Country: {project.location}</h4>
+                    <h4>
+                      <strong>{project.location}</strong>
+                    </h4>
                     <h4>{project.description}</h4>
                   </Link>
                 </StyledCard>

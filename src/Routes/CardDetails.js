@@ -40,16 +40,34 @@ export default function CardDetails() {
 
           <ComponentTwo>
             <div>
-              <h4>Life Time CO2: {data.life_time_CO2} Kg</h4>
-              <h4>Price: {data.price} euros</h4>
-              <h4>Family: {data.family}</h4>
               <h4>
-                Average Natural Life Span: {data.average_natural_life_span}{" "}
-                years
+                <strong>Life Time CO2: </strong>
+                {data.life_time_CO2} Kg
               </h4>
-              <h4>Stock: {data.stock}</h4>
-              <h4>Foliage: {data.foliage_type.name}</h4>
-              <h4>Origin type: {data.origin_type.name}</h4>
+              <h4>
+                <strong>Price: </strong>
+                {data.price} euros
+              </h4>
+              <h4>
+                <strong>Family: </strong>
+                {data.family}
+              </h4>
+              <h4>
+                <strong>Average Natural Life Span: </strong>
+                {data.average_natural_life_span} years
+              </h4>
+              <h4>
+                <strong>Stock: </strong>
+                {data.stock}
+              </h4>
+              <h4>
+                <strong>Foliage: </strong>
+                {data.foliage_type.name}
+              </h4>
+              <h4>
+                <strong>Origin type: </strong>
+                {data.origin_type.name}
+              </h4>
             </div>
             <div>
               <img
@@ -60,7 +78,6 @@ export default function CardDetails() {
                 style={{
                   border: "1px",
                   borderRadius: "20px",
-                  marginTop: "20px",
                 }}
               />
             </div>
@@ -68,12 +85,13 @@ export default function CardDetails() {
 
           <ComponentThree>
             <h4>
-              What makes this tree special?
+              <strong>What makes this tree special?</strong>
               <br />
               {data.particularities}
             </h4>
             <h4>
-              Why do planters like this tree?
+              <strong> Why do planters like this tree?</strong>
+
               <br />
               {data.planter_likes}
             </h4>
