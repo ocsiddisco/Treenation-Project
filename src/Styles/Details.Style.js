@@ -11,7 +11,7 @@ export const DetailsStyle = styled.div`
   align-self: center;
   background-color: white;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 14px 14px -18px;
   color: #645f11;
   font-size: 1rem;
   line-height: 23px;
@@ -25,7 +25,7 @@ export const DetailsStyle = styled.div`
 
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
-    transform: translate3d(0, 2px, 0);
+    transform: scale(1.005);
   }
 
   &:focus {
