@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import React from "react";
 import LoadingSpinner from "../Components/Spinner/Spinner.js";
+import Scroll from "../Components/Scroll.js";
+
 import { useGetProjectsQuery } from "../Features/TreenationApi";
 import { decrement } from "../Features/CounterSlice";
 import { useDispatch } from "react-redux";
@@ -47,6 +49,7 @@ export default function List() {
                 </StyledCard>
               );
             })}
+          <Scroll />
         </CardsWrapper>
       )}
     </div>

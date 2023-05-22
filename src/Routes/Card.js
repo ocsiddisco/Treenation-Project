@@ -9,6 +9,8 @@ import { StyledCard } from "../Styles/Cards.style.js";
 import { Title } from "../Styles/Title.style";
 import { CardsWrapper } from "../Styles/CardsWrapper.style";
 import { RenderBarChart } from "../Components/Graph";
+import Scroll from "../Components/Scroll";
+
 import { ComponentCenterColumn, ComponentCenter } from "../Styles/Div.Style";
 import chart from "../Images/chart.png";
 
@@ -83,6 +85,7 @@ export default function Card() {
                   </StyledCard>
                 );
               })}
+            <Scroll />
           </CardsWrapper>
 
           <BackButton onClick={handleClick}>
