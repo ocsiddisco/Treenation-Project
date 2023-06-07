@@ -24,13 +24,7 @@ With this project, my goals were to get more experience using React and Redux. I
 
 <p align='center'>
 
-   <img src="src/Images/n01.png">
-
-   <img src="src/Images/n02.png">
-
-   <img src="src/Images/n03.png">
-
-   <img src="src/Images/n04.png">
+   <img src="src/Images/s01.png">
 
 </p>
 
