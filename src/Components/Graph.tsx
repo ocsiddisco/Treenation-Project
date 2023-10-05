@@ -9,13 +9,13 @@ import {
   ComposedChart,
 } from "recharts";
 
-export function RenderBarChart(data) {
+export function RenderBarChart(props: { data: any[]}) {
   return (
     <ComposedChart
       layout="vertical"
       width={500}
       height={600}
-      data={data.data}
+      data={props.data}
       margin={{
         top: 20,
         right: 20,

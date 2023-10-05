@@ -1,11 +1,11 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useAppSelector, useAppDispatch } from '../app/hooks'
 import { incrementByAmount } from "../Features/CounterSlice";
 import { Wrapper, RequestButton, Text, Justify } from "../Styles/Counter.style";
 
-export default function CounterWrapper() {
-  const count = useSelector((state) => state.counter.value);
-  const dispatch = useDispatch();
+const CounterWrapper = () => {
+  const count = useAppSelector((state) => state.counter.value);
+  const dispatch = useAppDispatch();
 
   return (
     <Wrapper>
@@ -16,5 +16,6 @@ export default function CounterWrapper() {
         </RequestButton>
       </Justify>
     </Wrapper>
-  );
+  )
 }
+export default CounterWrapper

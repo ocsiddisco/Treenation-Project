@@ -3,11 +3,13 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-
+font-size: 18px;
   background-color: rgb(224 171 102);
-  margin: 20px;
-  padding: 20px;
+  margin: 20px 20px 0 20px;
+  padding: 15px;
   border-radius: 15px 50px;
+  height: 125px;
+  justify-content: space-around;
 `;
 
 export const RequestButton = styled.button`
@@ -17,7 +19,7 @@ export const RequestButton = styled.button`
   color: green;
   cursor: pointer;
   display: inline-block;
-  padding: 7px 20px;
+  padding: 5px 15px;
   text-align: center;
   transition: all 250ms;
   border: 0;
@@ -25,7 +27,7 @@ export const RequestButton = styled.button`
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 13em;
+  width: fit-content;
 
   &:hover {
     transform: scale(1.05);
@@ -34,8 +36,6 @@ export const RequestButton = styled.button`
 
 export const Text = styled.span`
   color: whitesmoke;
-  font-size: 25px;
-  padding: 10px;
 `;
 
 export const Justify = styled.div`

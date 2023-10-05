@@ -4,6 +4,10 @@
 
 With this project, my goals were to get more experience using React and Redux. It has also been an apportunity to discover new tools as React Router, Redux Toolkit, Recharts, Styled Components, and use Local Storage.
 
+## Updates October 2023
+
+I am finally diving into TypeScript. This project has been dormant for a few months now, I decided to convert it from Javascript to TypeScript. At the same time, I am improving the usage of HTML elements.
+
 ## Assignment
 
 - Get information from the API treenation about tree species, sites, projects. A first page will show basic information, while the 2nd will display more detailed information.
@@ -19,14 +23,6 @@ With this project, my goals were to get more experience using React and Redux. I
 - Handle errors
 
 - Use data visualization
-
-## Screenshots
-
-<p align='center'>
-
-   <img src="src/Images/s01.png">
-
-</p>
 
 ## How I approched the project
 
@@ -55,3 +51,11 @@ With this project, my goals were to get more experience using React and Redux. I
 - Improve the design for mobile
 - Add the name of the project on the project page
 - Add definition of "life time CO2" on hover
+
+## Screenshot
+
+<p align='center'>
+
+   <img src="src/Images/s01.png">
+
+</p>

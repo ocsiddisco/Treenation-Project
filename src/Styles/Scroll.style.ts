@@ -11,6 +11,7 @@ export const ScrollStyle = styled.div`
   box-shadow: 0 0.25rem 0.5rem 0 gray;
   opacity: 0.7;
   cursor: pointer;
+  z-index: 2;
 
   &:hover {
     opacity: 0.8;
