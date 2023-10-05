@@ -5,9 +5,9 @@ export const DetailsStyle = styled.div`
   @import url("./Font/OpenSans/OpenSans-Regular.ttf");
   display: flex;
   flex-direction: column;
-
-  width: 40em;
-  margin: 10px 10px 10px 10px;
+box-sizing: border-box;
+  width: 50%;
+  margin: 20px 0 20px 0;
   align-self: center;
   background-color: white;
   border-radius: 10px;
@@ -15,13 +15,19 @@ export const DetailsStyle = styled.div`
   color: #645f11;
   font-size: 1rem;
   line-height: 23px;
-  padding: 0.75rem;
+  padding: 20px;
   text-decoration: none;
   transition: all 235ms ease-in-out;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   font-weight: 100;
+  @media (max-width: 1500px) {
+      width:60%
+    }
+    @media (max-width: 900px) {
+      width:80%
+    }
 
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
@@ -32,18 +38,24 @@ export const DetailsStyle = styled.div`
     box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
   }
 
-  & h1 {
+  & h4 {
     display: flex;
     justify-items: center;
     font-family: "OpenSans-Light", sans-serif;
-    font-weight: 300;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 0 10px 0 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
   }
 
-  & h4 {
+  & p {
     font-family: "OpenSans-Regular", sans-serif;
     font-weight: 200;
-
-    margin-top: 3px;
+    font-size: 18px;
+    margin: 10px;
     line-height: 1.3em;
     text-align: justify;
     @media (max-width: 640px) {

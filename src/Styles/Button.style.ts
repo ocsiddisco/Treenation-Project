@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 
 export const BackButton = styled.button`
-  --b: 3px;   /* border thickness */
-  --s: .45em; /* size of the corner */
+  --b: 1px;   /* border thickness */
+  --s: .35em; /* size of the corner */
   --color: #373B44;
   align-self: flex-end;
-  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  padding: calc(.3em + var(--s)) calc(.7em + var(--s));
   color: var(--color);
   --_p: var(--s);
   background:
@@ -14,10 +14,11 @@ export const BackButton = styled.button`
     var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
   transition: .3s linear, color 0s, background-color 0s;
   outline: var(--b) solid #0000;
-  outline-offset: .6em;
+  outline-offset: .3em;
   font-size: 16px;
   cursor: pointer;
-  margin: 10px;
+  margin: 30px 40px 0 20px;
+  align-self: flex-start;
 
   border: 0;
 

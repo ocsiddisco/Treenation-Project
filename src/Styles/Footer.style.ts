@@ -5,7 +5,13 @@ export const Footer = styled.footer`
   font-size: 1rem;
   font-family: "OpenSans-Light", sans-serif;
   font-weight: 300;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items:center;
+  height: 100%;
+
+  & p {
+    margin: 0;
+  }
 `;

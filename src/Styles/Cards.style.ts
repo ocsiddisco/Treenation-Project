@@ -18,27 +18,33 @@ export const StyledCard = styled.div`
   -webkit-user-select: none;
   touch-action: manipulation;
 
-  & h1 {
+  & h4 {
     display: flex;
     font-family: "OpenSans-Light", sans-serif;
     line-height: 1.2em;
     color: #645f11;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
     font-weight: 200;
-    margin-top: 0;
-    margin-bottom: 10px;
+    padding: 0 10px 0 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
     @media (max-width: 640px) {
-      font-size: 18px;
-      font-weight: bold;
+      font-size: 24px;
     }
   }
 
-  & h4 {
+  & p {
     font-family: "OpenSans-Regular", sans-serif;
     color: #645f11;
     line-height: 1.3em;
     text-align: justify;
     font-weight: 200;
-    margin: 5px 0 5px 0;
+    margin: 10px;
+    font-size: 18px;
+
   }
 
   &:hover {
@@ -46,8 +52,8 @@ export const StyledCard = styled.div`
     transform: scale(1.02);
     background-color: #645f11;
 
-    & h1,
-    h4 {
+    & h4,
+    p {
       color: white;
     }
   }

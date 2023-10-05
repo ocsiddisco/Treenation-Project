@@ -8,8 +8,8 @@ export default function FooterLign() {
   return (
     <footer>
       <Footer>
-        <div> © Made by Céline</div>
-        <div>
+        <p> Made by Céline</p>
+        <nav>
           <a href="https://github.com/ocsiddisco/Treenation-Project">
             <img src={github} alt="github" width="60px" height="60px" />
           </a>
@@ -19,7 +19,7 @@ export default function FooterLign() {
           <a href="mailto:celine.le.corv@gmail.com">
             <img src={email} alt="email" width="60px" height="60px" />
           </a>
-        </div>
+        </nav>
       </Footer>
     </footer>
   );
