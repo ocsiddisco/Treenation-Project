@@ -5,7 +5,7 @@ export const DetailsStyle = styled.div`
   @import url("./Font/OpenSans/OpenSans-Regular.ttf");
   display: flex;
   flex-direction: column;
-box-sizing: border-box;
+  box-sizing: border-box;
   width: 50%;
   margin: 20px 0 20px 0;
   align-self: center;
@@ -13,8 +13,6 @@ box-sizing: border-box;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.2) 15px 14px 14px -18px;
   color: #645f11;
-  font-size: 1rem;
-  line-height: 23px;
   padding: 20px;
   text-decoration: none;
   transition: all 235ms ease-in-out;
@@ -40,9 +38,9 @@ box-sizing: border-box;
 
   & h4 {
     display: flex;
-    justify-items: center;
+    text-align:center;    
     font-family: "OpenSans-Light", sans-serif;
-    font-size: 28px;
+    font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 2px;
     padding: 0 10px 0 10px;
@@ -51,12 +49,18 @@ box-sizing: border-box;
    
   }
 
+  .bold {
+    font-weight: bold;
+  }
+  .space {
+  padding-top: 5px;
+ }
   & p {
     font-family: "OpenSans-Regular", sans-serif;
     font-weight: 200;
-    font-size: 18px;
+    font-size: 1rem;
     margin: 10px;
-    line-height: 1.3em;
+    line-height: 1.2rem;
     text-align: justify;
     @media (max-width: 640px) {
       text-align: center;
