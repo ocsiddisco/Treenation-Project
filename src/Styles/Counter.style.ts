@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-font-size: 18px;
+font-size: 1rem;
   background-color: rgb(224 171 102);
   margin: 20px 20px 0 20px;
   padding: 15px;
@@ -23,7 +23,7 @@ export const RequestButton = styled.button`
   text-align: center;
   transition: all 250ms;
   border: 0;
-  font-size: 16px;
+  font-size: 1rem;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;

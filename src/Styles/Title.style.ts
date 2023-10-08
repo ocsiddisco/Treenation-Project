@@ -10,7 +10,7 @@ justify-content: center;
 align-items :center;
 
   & h1 {
-    font-size: 42px;
+    font-size: 2rem;
     font-weight: 300;
 letter-spacing: 2px;
   padding: 0 20px 0 20px;
@@ -22,7 +22,7 @@ letter-spacing: 2px;
   & p {
     text-align: center;
 width: 60%;
-font-size: 20px;
+font-size: 1.1rem;
 @media (max-width: 900px) {
   width: 80%;
   }

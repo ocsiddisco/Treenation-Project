@@ -44,60 +44,57 @@ export default function CardDetails() {
 
           <ComponentTwo>
             <div>
-              <p>
-                <strong>Life Time CO2: </strong>
-                {data.life_time_CO2} Kg
+              <p className="column">
+                <span className="bold">Life Time CO2: </span>
+                <span>{data.life_time_CO2} Kg</span>
               </p>
-              <p>
-                <strong>Price: </strong>
-                {data.price} euros
+              <p className="column">
+                <span  className="bold">Price: </span>
+                <span>{data.price} euros</span>
               </p>
-              <p>
-                <strong>Family: </strong>
-                {data.family}
+              <p className="column">
+                <span  className="bold">Family: </span>
+                <span>{data.family}</span>
               </p>
-              <p>
-                <strong>Average Natural Life Span: </strong>
-                {data.average_natural_life_span} years
+              <p className="column">
+                <span  className="bold">Average Natural Life Span: </span>
+                <span>{data.average_natural_life_span} years</span>
               </p>
-              <p>
-                <strong>Stock: </strong>
-                {data.stock}
+              <p className="column">
+                <span  className="bold">Stock: </span>
+                <span>{data.stock}</span>
               </p>
-              <p>
-                <strong>Foliage: </strong>
-                {data.foliage_type?.name}
+              <p className="column">
+                <span  className="bold">Foliage: </span>
+                <span>{data.foliage_type?.name}</span>
               </p>
-              <p>
-                <strong>Origin type: </strong>
-                {data.origin_type?.name}
+              <p className="column">
+                <span  className="bold">Origin type: </span>
+                <span>{data.origin_type?.name}</span>
               </p>
             </div>
-            <div>
               <img
                 src={data.image}
                 alt="tree"
                 style={{
-                  maxWidth: "300px",
-                  height: "auto",
                   border: "1px solid",
                   borderRadius: "20px",
+                  marginBottom: "20px"
                 }}
               />
-            </div>
           </ComponentTwo>
 
           <ComponentThree>
             <p>
-              <strong>What makes this tree special?</strong>
+              <span  className="bold">What makes this tree special?</span>
               <br />
-              {data.particularities}
+              <span className="space">{data.particularities}</span>
             </p>
             <p>
-              <strong> Why do planters like this tree?</strong>
+              <span  className="bold"> Why do planters like this tree?</span>
 
               <br />
-              {data.planter_likes}
+              <span className="space">{data.planter_likes}</span>
             </p>
           </ComponentThree>
 

@@ -21,31 +21,30 @@ export const StyledCard = styled.div`
   & h4 {
     display: flex;
     font-family: "OpenSans-Light", sans-serif;
-    line-height: 1.2em;
+    line-height: 1.5rem;
     color: #645f11;
-    font-size: 28px;
+    font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 2px;
     font-weight: 200;
     padding: 0 10px 0 10px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
-
-    @media (max-width: 640px) {
-      font-size: 24px;
-    }
   }
 
   & p {
     font-family: "OpenSans-Regular", sans-serif;
     color: #645f11;
-    line-height: 1.3em;
-    text-align: justify;
+    line-height: 1.2rem;
     font-weight: 200;
     margin: 10px;
-    font-size: 18px;
-
+    font-size: 1rem;
   }
+
+ .bold {
+  font-weight: bold
+}
+
 
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;

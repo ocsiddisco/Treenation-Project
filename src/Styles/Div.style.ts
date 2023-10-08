@@ -20,6 +20,20 @@ export const ComponentTwo = styled.div`
     flex-direction: column-reverse;
     align-items: center;
   
+   .column {
+    @media (max-width: 400px) {
+    display: flex;
+    flex-direction: column;
+   }}
+
+img {
+  max-width: 300px;
+  height: auto;
+
+  @media (max-width: 700px) {
+  width: 80%;
+  }
+}
 `;
 
 export const ComponentThree = styled.div`

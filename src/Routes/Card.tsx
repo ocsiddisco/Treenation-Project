@@ -18,8 +18,6 @@ import chart from "../Images/chart.png";
 
 export default function Card() {
   const { id } = useParams<{ id?: string }>();
-  // if (!id) { return}
-  // const { data, isLoading } = useGetAllQuery(id);
   const [showed, setShowed] = useState(false);
   const dispatch = useAppDispatch();
   let navigate = useNavigate();
@@ -59,7 +57,7 @@ export default function Card() {
                 alt="chart"
                 src={chart}
                 onClick={() => setShowed(!showed)}
-                style={{ cursor: "pointer" }}
+                style={{ cursor: "pointer" , width:  "50px", height: 'auto'}}
               />
               {showed && <RenderBarChart data={data} />}
             </ComponentCenterColumn>
@@ -71,11 +69,13 @@ export default function Card() {
                 <Link to={`/tree/${tree.id}`} style={{ textDecoration: "none" }}>
                   <h4>{tree.name}</h4>
                   <p>
-                    <strong>Life Time CO2: </strong>
-                    {tree.life_time_CO2} Kg
+                    <span className="bold">Life Time CO2: </span>
+                    <span>{tree.life_time_CO2} Kg</span>
+                    
                   </p>
                   <p>
-                    <strong>Price per tree:</strong> {tree.price} euros
+                    <span className="bold">Price per tree: </span>
+                    <span>{tree.price} euros</span>
                   </p>
                 </Link>
               </StyledCard>

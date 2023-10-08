@@ -4,6 +4,6 @@ export const Main = styled.div`
 display: flex;
 flex-direction: column;
 width:100%;
-margin-bottom: 100px;
+margin-bottom: 130px;
 padding-top: 20px;
 `;

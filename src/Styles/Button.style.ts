@@ -15,7 +15,7 @@ export const BackButton = styled.button`
   transition: .3s linear, color 0s, background-color 0s;
   outline: var(--b) solid #0000;
   outline-offset: .3em;
-  font-size: 16px;
+  font-size: 1 rem;
   cursor: pointer;
   margin: 30px 40px 0 20px;
   align-self: flex-start;
