@@ -52,10 +52,9 @@ I am finally diving into TypeScript. This project has been dormant for a few mon
 - Add the name of the project on the project page
 - Add definition of "life time CO2" on hover
 
-## Screenshot
+## Take a peek
 
-<p align='center'>
 
-   <img src="src/Images/s01.png">
+![treenation](https://github.com/ocsiddisco/Treenation-Project/assets/114222588/05c006d8-1a54-48c6-8df3-5b5d8ec784d3)
 
-</p>
+
